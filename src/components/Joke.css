@@ -1,0 +1,33 @@
+.joke {
+  padding: 20px;
+  margin: 20px 0 0;
+  border-top: 1px solid #ccc;
+  border-radius: 10px
+}
+
+
+
+
+.joke p {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.joke button {
+  border: 0;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  color: #697882;
+  cursor: pointer;
+}
+
+.joke button img {
+  margin-right: 5px;
+}
+
+.joke button:hover {
+  opacity: 0.7;
+}
