@@ -31,7 +31,12 @@ class Timeline extends React.Component {
     }
 
     subscribeToEvents = () => {
-        const io = socket(configuration.serverUrl)
+
+        var serverUrl = process
+            ? process.env.serverUrl
+            : configuration.serverUrl
+
+        const io = socket(serverUrl)
 
         const { dispatch } = this.props
 
